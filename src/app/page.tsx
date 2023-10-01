@@ -3,13 +3,11 @@ import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction";
 import SeoMeta from "@/partials/SeoMeta";
-import Testimonials from "@/partials/Testimonials";
 import { Button, Feature } from "@/types";
 import { FaCheck } from "react-icons/fa/index.js";
 
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
-  const testimonial = getListPage("sections/testimonial.md");
   const callToAction = getListPage("sections/call-to-action.md");
   const { frontmatter } = homepage;
   const {
@@ -35,11 +33,6 @@ const Home = () => {
                 className="mb-8"
                 dangerouslySetInnerHTML={markdownify(banner.content ?? "")}
               />
-              {banner.button!.enable && (
-                <a className="btn btn-primary" href={banner.button!.link}>
-                  {banner.button!.label}
-                </a>
-              )}
             </div>
             {banner.image && (
               <div className="col-12">
@@ -90,28 +83,18 @@ const Home = () => {
                   dangerouslySetInnerHTML={markdownify(feature.content)}
                 />
                 <ul>
-                  {feature.bulletpoints.map((bullet: string) => (
+                  {feature?.bulletpoints?.map((bullet: string) => (
                     <li className="relative mb-4 pl-6" key={bullet}>
                       <FaCheck className={"absolute left-0 top-1.5"} />
                       <span dangerouslySetInnerHTML={markdownify(bullet)} />
                     </li>
                   ))}
                 </ul>
-                {feature.button.enable && (
-                  <a
-                    className="btn btn-primary mt-5"
-                    href={feature.button.link}
-                  >
-                    {feature.button.label}
-                  </a>
-                )}
               </div>
             </div>
           </div>
         </section>
       ))}
-
-      <Testimonials data={testimonial} />
       <CallToAction data={callToAction} />
     </>
   );

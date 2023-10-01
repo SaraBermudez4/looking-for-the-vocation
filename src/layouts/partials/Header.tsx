@@ -7,7 +7,6 @@ import menu from "@/config/menu.json";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
-import { IoSearch } from "react-icons/io5/index.js";
 
 //  child navigation link interface
 export interface IChildNavigationLink {
@@ -26,7 +25,7 @@ export interface INavigationLink {
 const Header = () => {
   // distructuring the main menu from menu object
   const { main }: { main: INavigationLink[] } = menu;
-  const { navigation_button, settings } = config;
+  const { settings } = config;
   // get current path
   const pathname = usePathname();
 
@@ -79,7 +78,7 @@ const Header = () => {
           {main.map((menu, i) => (
             <React.Fragment key={`menu-${i}`}>
               {menu.hasChildren ? (
-                <li className="nav-item nav-dropdown group relative">
+                <li className="nav-item nav-dropdown group relative ">
                   <span
                     className={`nav-link inline-flex items-center ${
                       menu.children?.map(({ url }) => url).includes(pathname) ||
@@ -127,36 +126,9 @@ const Header = () => {
               )}
             </React.Fragment>
           ))}
-          {navigation_button.enable && (
-            <li className="mt-4 inline-block lg:hidden">
-              <Link
-                className="btn btn-outline-primary btn-sm"
-                href={navigation_button.link}
-              >
-                {navigation_button.label}
-              </Link>
-            </li>
-          )}
         </ul>
         <div className="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
-          {settings.search && (
-            <Link
-              className="mr-5 inline-block border-r border-border pr-5 text-xl text-dark hover:text-primary dark:border-darkmode-border dark:text-white"
-              href="/search"
-              aria-label="search"
-            >
-              <IoSearch />
-            </Link>
-          )}
           <ThemeSwitcher className="mr-5" />
-          {navigation_button.enable && (
-            <Link
-              className="btn btn-outline-primary btn-sm hidden lg:inline-block"
-              href={navigation_button.link}
-            >
-              {navigation_button.label}
-            </Link>
-          )}
         </div>
       </nav>
     </header>

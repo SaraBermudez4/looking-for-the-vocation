@@ -1,57 +1,43 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Inicio",
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Carreras",
+      "url": "/carrers"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "Universidades",
+      "url": "/universities"
     },
     {
-      "name": "Pages",
+      "name": "Orientación vocacional",
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": "Contact",
-          "url": "/contact"
+          "name": "Tips",
+          "url": "/tips"
         },
         {
-          "name": "Blog",
-          "url": "/blog"
+          "name": "Tips adicionales",
+          "url": "/additional-tips"
         },
         {
-          "name": "Authors",
-          "url": "/authors"
+          "name": "Videos",
+          "url": "/videos"
         },
         {
-          "name": "Categories",
-          "url": "/categories"
-        },
-        {
-          "name": "Search",
-          "url": "/search"
-        },
-        {
-          "name": "404 Page",
-          "url": "/404"
+          "name": "Tests",
+          "url": "/tests"
         }
       ]
-    }
-  ],
-  "footer": [
-    {
-      "name": "Elements",
-      "url": "/elements"
     },
     {
-      "name": "Privacy Policy",
-      "url": "/privacy-policy"
+      "name": "Bitacora",
+      "url": "https://buscandolavocacion.wixsite.com/misitio"
     }
   ]
 }

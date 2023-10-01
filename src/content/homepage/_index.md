@@ -1,51 +1,32 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Next Project"
-  content: "Nextplate is a free starter template built with Next and TailwindCSS, providing everything you need to jumpstart your Next project and save valuable time."
-  image: "/images/banner.png"
-  button:
-    enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/nextplate"
+  title: "Buscando la vocación"
+  content: "Plataforma creada por alumnos de 11º para orientación vocacional. Descubre tu carrera ideal, conoce universidades y explora becas. Tu futuro, a un clic."
+  image: "/images/teaching.svg"
 
 # Features
 features:
-  - title: "What's Included in Nextplate"
-    image: "/images/service-1.png"
-    content: "Nextplate is a comprehensive starter template that includes everything you need to get started with your Next project. What's Included in Nextplate"
-    bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Next and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
-
-  - title: "Discover the Key Features Of Next"
-    image: "/images/service-2.png"
-    content: "Next is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+  - title: "¿Quiénes Somos?"
+    image: "/images/solution_mindset.svg"
+    content: "¡Hola y bienvenidos a **Buscando la vocación**! Somos un grupo de estudiantes de grado 11 apasionados por ayudar a otros a encontrar su camino en el mundo académico y profesional. Sabemos lo abrumador que puede ser tomar decisiones sobre el futuro, especialmente cuando se trata de elegir una carrera universitaria.  Por eso, hemos creado esta plataforma: para ofrecer una guía amigable, accesible y actualizada que te ayude a tomar decisiones informadas."
     button:
       enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/nextplate"
+      label: "Conoce nuestro equipo"
+      link: "/authors"
 
-  - title: "The Top Reasons to Choose Next for Your Next Project"
-    image: "/images/service-3.png"
-    content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
+  - title: "Nuestra Visión"
+    image: "/images/examns.svg"
+    content: "Entendemos que cada persona tiene un conjunto único de intereses y habilidades que pueden llevar a múltiples caminos de éxito. Queremos que este espacio sea un punto de partida para descubrir esas posibilidades y sentirte más seguro acerca de las decisiones que tomas."
+
+  - title: "¿Qué Ofrecemos?"
+    image: "/images/education.svg"
+    content: ""
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "**Descubrimiento de Carreras:** Tests y cuestionarios diseñados por nosotros para ayudarte a identificar posibles campos de interés."
+      - "**Base de Datos de Universidades y Carreras:** Información actualizada sobre distintas instituciones educativas, programas académicos y requisitos de admisión."
+      - "**Oportunidades de Becas:** Un listado de becas disponibles a nivel nacional, para que puedas planificar tu futuro financiero."
+      - "**Consejos de Estudiantes para Estudiantes:** Guías, consejos y tips para encontrar tu vocación."
     button:
       enable: false
       label: ""
